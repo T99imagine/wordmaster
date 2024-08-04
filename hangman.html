@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordMaster</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="welcomeScreen" class="welcome-screen">
+        <h1>Welcome to WordMaster</h1>
+        <button id="startButton">Start Game</button>
+    </div>
+
+    <header class="header">
+        <div class="header-content">
+            <h1 class="header-title">✨WordMaster✨</h1>
+
+            <span class="header-slogan">-LEARNING THROUGH FUN!🤗</span>
+<nav>
+<ul>
+<table>
+<td>
+<li><a href="About.html">about</a></li>
+</td>
+</table>
+</ul>
+</nav>
+        </div>
+    </header>
+
+    <div class="game-container">
+        <div class="hangman-container">
+            <canvas id="hangmanCanvas" width="300" height="300"></canvas>
+            <p id="wordDisplay">_ _ _ _ _</p>
+            <p>Guess the word, letter by letter.</p>
+            <input type="text" id="letterInput" maxlength="1">
+            <button id="guessButton">Guess</button>
+            <p id="message"></p>
+            <p>Incorrect Guesses: <span id="incorrectGuesses">0</span></p>
+            <button id="revealDefinitionButton" style="display: none;">Reveal Definition</
+
+button>
+            <p id="definition" style="display: none;"></p>
+            <button id="restartButton" style="display: none;">Restart Game</button>
+        </div>
+
+        <div class="motivational-container">
+            <div class="motivational-box">
+                <p id="motivationalMessage">Stay positive and strong! 💪</p>
+            </div>
+            <div class="feedback-container">
+                <h2>Feedback</h2>
+                <textarea id="feedbackTextarea" rows="4" placeholder="📚 Share your thoughts..."></textarea>
+                <button id="submitFeedbackButton">Submit</button>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>🌐AllRightsReservedByTheOwner🌐<br>&copy; 2024-ClassXIC of KMSS</p>
+    </footer>
+
+    <audio id="incorrectSound">
+        <source src="ohoh.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="hangman.js"></script>
+</body>
+</html>

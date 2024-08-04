@@ -1,0 +1,214 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.welcome-screen.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.header {
+    background-color: #34495e;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+    position: sticky;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.header-title {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.header-slogan {
+    font-size: 1.2em;
+    margin-left: 15px;
+    color: #ecf0f1;
+}
+
+nav ul {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1em;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+table {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #d9e3ea;
+    color: #2c3e50;
+}
+
+tr:hover {
+    background-color: #e1f5fe;
+}
+
+.hangman-container {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+    margin-right: 40px;
+}
+
+#hangmanCanvas {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.motivational-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+}
+
+.motivational-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #34495e;
+}
+
+.motivational-box p {
+    margin: 0;
+}
+
+.motivational-box::before {
+    content: "✨ ";
+    color: #f39c12;
+}
+
+.feedback-container {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+    height: 250px;
+}
+
+.feedback-container h2 {
+    margin-top: 0;
+    color: #34495e;
+}
+
+.feedback-container textarea {
+    width: 100%;
+    height: calc(100% - 60px);
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+    resize: none;
+    transition: border-color 0.3s ease;
+}
+
+.feedback-container textarea:focus {
+    border-color: #f39c12;
+    outline: none;
+}
+
+footer.footer {
+    background-color: #34495e;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    flex-shrink: 0;
+    width: 100%;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+  .hidden {
+            display: none;
+        }
+        #progressBarCanvas {
+            border: 1px solid #ccc;
+            width: 300px;
+            height: 40px;
+        }

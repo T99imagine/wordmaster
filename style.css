@@ -1,0 +1,159 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    background-color: #34495e;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+    position: sticky;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.header-title {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.header-slogan {
+    font-size: 1.2em;
+    margin-left: 15px;
+    color: #ecf0f1;
+}
+
+nav ul {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1em;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+table {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #d9e3ea;
+    color: #2c3e50;
+}
+
+tr:hover {
+    background-color: #e1f5fe;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-section {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.section-title {
+    font-size: 2em;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+.section-text {
+    font-size: 1.2em;
+    color: #555;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.quote-section {
+    text-align: center;
+    width: 100%;
+}
+
+.quote-box {
+    display: inline-block;
+    padding: 15px;
+    font-size: 1.1em;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.quote-box:hover {
+    background-color: #ffe4e1;
+    color: #ff4500;
+}
+
+.footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
